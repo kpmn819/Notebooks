@@ -85,7 +85,7 @@ class HelloForm(Form):
             selection = self.csv_lbox.Items[self.csv_lbox.ItemIndex]
             #selection = self.csv_lbox(GetSelectedText)
             self.edit.Text= selection
-            print(selection)
+            print(selection + ' = ' + str(self.csv_lbox.ItemIndex))
         
 
     # //////////// CSV FILE READER ///////////////
